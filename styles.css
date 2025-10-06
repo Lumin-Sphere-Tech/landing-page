@@ -913,15 +913,25 @@ body {
    =========================== */
 .contact-section {
     padding: 6rem 0;
+    
+    
 }
 
 .contact-grid {
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
     gap: 3rem;
     margin-top: 3rem;
 }
-
+.contact-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+}
 .contact-form-wrapper,
 .contact-info-card,
 .partnership-card,
@@ -930,6 +940,8 @@ body {
     border: 1px solid var(--card-border);
     border-radius: 1rem;
     padding: 2.5rem;
+    width: 100%;
+    max-width: 600px;
 }
 
 .contact-form-wrapper h3,
@@ -939,6 +951,7 @@ body {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 .contact-form {
@@ -999,6 +1012,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    margin: 0 auto;
+    max-width: 800px;
 }
 
 .contact-items {
