@@ -529,11 +529,7 @@
             <div class="contact-grid">
                 <div class="contact-form-wrapper">
                     <h3>Get Your Custom Quote</h3>
-                    <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-                        <input type="hidden" name="form-name" value="contact">
-                        <div style="display:none">
-                            <label>Don’t fill this out: <input name="bot-field"></label>
-                        </div>
+                    <form action= "https://formspree.io/f/xjkpdylo" class="contact-form" name="contact" method="POST">
                         <div class="form-row">
                             <div class="form-group">
                                 <label>Full Name *</label>
@@ -588,12 +584,12 @@
                                     <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                                 </svg>
                             </button>
-                            <button type="button" class="btn btn-secondary">
+                            <!-- <button type="button" class="btn btn-secondary">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                                     <path d="M15 3H9C7.89543 3 7 3.89543 7 5V19L10 17L13 19V5C13 3.89543 12.1046 3 11 3Z" stroke="currentColor" stroke-width="2"/>
                                 </svg>
                                 Schedule Call
-                            </button>
+                            </button> -->
                         </div>
                     </form>
                 </div>
@@ -721,6 +717,7 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
